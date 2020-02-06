@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 85vh;
+    width: 100%;
+    background-image: url(img/road.jpg);
+}
+
+.logo{
+    height: 150px;
+    width: auto;
+    float: left;
+    margin: 30px;
+    margin-top: -50px;
+}
+
+ul{
+    margin: 500px;
+    padding: 0;
+    display: flex;
+    margin-top: 60px;
+}
+
+ul li{
+    list-style: none;
+    margin: 0 20px;
+    transition: 0.5s;
+}
+
+ul li a{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 3px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+ul:hover li a{
+    transform: scale(1.5);
+    opacity: .2;
+    filter: blur(5px);
+}
+
+ul li a:hover{
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+}
+
+ul li a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2ecc71;
+    transition: transform 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+}
+
+ul li a:hover:before{
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(44,62,80,0.7);
+    text-align: center;
+}
+
+.box h1{
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.box input[type="text"],.box input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input[type="text"]:focus,.box input[type="password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+.box input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[type="submit"]:hover{
+    background: #2ecc71;
+}
+
+a{
+    color: #2ecc71;
+    text-decoration: blink;
+}
+
+a:hover{
+    color: #3498db;
+}
+
+footer{
+    background-color: #fff;
+    color: #2ecc71;
+    font-size:23px;
+    font-weight: 500;
+}

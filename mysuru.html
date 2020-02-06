@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Mysuru</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="mysuru.css">
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.menu-toggle').click(function(){
+                    $('.menu-toggle').toggleClass('active');
+                    $('nav').toggleClass('active');
+                });
+            });
+            </script>
+            
+            <script>
+                
+                var images=["img/mysore.jpg",
+                            "img/mysore2.jpg",
+                            "img/mysore3.jpg",
+                            "img/mysore4.jpg"];
+                        
+                var i=0;
+                
+                function slides(){
+                    document.getElementById("slideimage").src = images[i];
+                    if(i<(images.length-1))
+                        i++;
+                    else
+                        i=0;
+                }
+                
+                setInterval(slides, 2000);
+            </script>
+        
+       <header>
+                <img src="img/logo3.png" class="logo">
+            <div class="menu-toggle"></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="packages.html">PACKAGES</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="signup.html">SIGN UP</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <div class="clearfix"></div>
+        </header>
+            
+            <div class="slideshow">
+                <h1>Mysuru Tour</h1>
+                
+                <img src="img/mysore.jpg" id="slideimage">
+                
+                <h3>Price: INR 30000</h3>
+                
+                <a href="select.html" class="btn">Book Now</a>
+                
+            </div>
+            
+    </body>
+</html>

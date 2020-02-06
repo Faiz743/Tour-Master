@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Tour Master</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        
+        <section>
+            <img src="img/logo3.png" class="logo">
+            <span class="skewed"></span><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <h3>Welcome To <strong class="banner">Tour Master</strong></h3>
+                <h1>DO COME & VISIT <span class="change_content"> </span></h1>
+                <a href="about.html" class="btn1">Know More</a>
+                <a href="sign.html"class="btn2">Sign Up</a>
+        </section>
+
+        <script type="text/javascript">
+            var skewed = document.querySelector(".skewed");
+            window.addEventListener('scroll', function(){
+              var value = -7 + window.scrollY/60;
+               skewed.style.transform = "skewY("+ value +"deg)"
+            });
+        </script>
+        
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cont.html">Contact</a></li>
+        </ul>
+        
+    </body>
+</html>

@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+.logo{
+    height: 150px;
+    width: auto;
+    float: left;
+    margin: 30px;
+    margin-top: -50px;
+}
+
+ul{
+    margin: 450px;
+    padding: 0;
+    display: flex;
+    margin-top: 70px;
+}
+
+ul li{
+    list-style: none;
+    margin: 0 20px;
+    transition: 0.5s;
+}
+
+ul li a{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #21A077;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+ul:hover li a{
+    transform: scale(1.5);
+    opacity: .2;
+    filter: blur(5px);
+}
+
+ul li a:hover{
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+}
+
+ul li a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3AD3CD;
+    transition: transform 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+}
+
+ul li a:hover:before{
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.about-img{
+    float: left;
+    left: 50%;
+    margin-top: -310px;
+}
+
+.image{
+    height: 50%;
+    width: 50%;
+}
+
+.about-right{
+    text-align: center;
+    margin-top: -380px;
+}
+
+.color{
+    color: #3AD3CD;
+}
+
+.color2{
+    width: 45%;
+    float: right;
+    margin-top: -280px;
+    font-size: 21px;
+}
